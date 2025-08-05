@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from util.world2px import world2px
+from scilslab_pyworld2px.world2px import world2px
 
 
 def add_pixel_coords_to_region_spots(scils_dataset):
@@ -26,3 +26,4 @@ def add_pixel_coords_to_region_spots(scils_dataset):
     region_spots_df.sort_values(by='spot_id')
     region_spots_df.reset_index(drop=True)
     return region_spots_df
+
